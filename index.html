@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | 기획자 & 프론트엔드 개발자</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter">PORTFOLIO.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#video" class="hover:text-blue-600 transition">Shorts & Video</a>
+                <a href="#infographic" class="hover:text-blue-600 transition">Infographics</a>
+                <a href="#landing" class="hover:text-blue-600 transition">Landing Pages</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold">
+            Web Designer • Planner • Frontend Developer
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
+            데이터를 읽고 <br class="hidden md:block" />
+            <span class="gradient-text">시각적 즐거움</span>을 기획합니다
+        </h1>
+        <p class="text-lg md:text-xl text-gray-500 max-w-2xl mb-10 leading-relaxed">
+            단순한 디자인을 넘어 트렌드와 인사이트를 바탕으로 사용자를 설득하는 콘텐츠를 만듭니다. 영상, 인포그래픽, 웹 렌딩 페이지까지 아이디어를 실현하는 과정을 담았습니다.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#video" class="px-8 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition">작업물 보기</a>
+            <a href="mailto:your@email.com" class="px-8 py-3 bg-white text-gray-900 border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- 1. Video & Shorts Section -->
+    <section id="video" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2">🎥 Short-form & Video Campaigns</h2>
+            <p class="text-gray-500 mb-10">브랜드의 핵심을 빠르게 전달하는 숏폼 기획 및 편집 영상입니다.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video Item 1 -->
+                <div class="card-hover bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+                    <div class="aspect-[9/16] bg-gray-200 relative">
+                        <!-- YouTube Shorts Iframe Example -->
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+                            [AULA F65 키보드 홍보 영상 Iframe]
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-1">AULA F65 프로모션 숏폼</h3>
+                        <p class="text-sm text-gray-500">타건감과 디자인을 강조한 인스타그램 릴스 및 유튜브 쇼츠 기획</p>
+                    </div>
+                </div>
+                <!-- Video Item 2 -->
+                <div class="card-hover bg-gray-50 rounded-2xl overflow-hidden border border-gray-100">
+                    <div class="aspect-[9/16] bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+                            [2030 소비 트렌드 영상 Iframe]
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-1">2030 세대 타겟팅 캠페인</h3>
+                        <p class="text-sm text-gray-500">소비 심리를 분석한 브랜딩 메시지 전달 영상</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Infographics & Posters Section -->
+    <section id="infographic" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2">📊 Infographics & Posters</h2>
+            <p class="text-gray-500 mb-10">복잡한 데이터를 직관적인 시각 자료로 재구성한 홍보 포스터입니다.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Poster Item 1 -->
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-full h-64 bg-gray-200 rounded-xl mb-6 flex items-center justify-center text-gray-400 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Busan+Data+Dashboard+Poster" alt="실시간 대시보드 포스터" class="w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">실시간 대기 및 환경 대시보드 포스터</h3>
+                    <p class="text-gray-600 mb-4">부산 지역의 날씨 및 미세먼지 데이터를 분석하여 한눈에 파악할 수 있도록 디자인한 인포그래픽 포스터입니다.</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 text-xs rounded-full">Python Data Viz</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Poster Design</span>
+                    </div>
+                </div>
+
+                <!-- Poster Item 2 -->
+                <div class="card-hover bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="w-full h-64 bg-gray-200 rounded-xl mb-6 flex items-center justify-center text-gray-400 overflow-hidden">
+                        <img src="https://via.placeholder.com/800x600.png?text=Traffic+Congestion+Infographic" alt="교통 혼잡도 인포그래픽" class="w-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">대중교통 혼잡도 안내 인포그래픽</h3>
+                    <p class="text-gray-600 mb-4">지하철 혼잡도 및 공공 자전거 대여소 현황을 시각화하여 시민들의 원활한 이동을 돕는 정보 안내 디자인입니다.</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 text-xs rounded-full">Infographic</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Landing Pages Section -->
+    <section id="landing" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2">💻 Web & Landing Pages</h2>
+            <p class="text-gray-500 mb-10">굿즈 기획 및 캠페인 홍보를 위해 직접 구축한 렌딩 페이지입니다.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Web Item 1 -->
+                <a href="#" target="_blank" class="card-hover group block bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-gray-900">⌨️ 키캡 키링 굿즈 홍보 페이지</h3>
+                        <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </div>
+                    <p class="text-gray-600 mb-6">커스텀 기계식 키보드 매니아를 타겟으로 한 키캡 형태의 키링 굿즈 기획안과 실구매 전환을 유도하는 프로모션 렌딩 페이지입니다.</p>
+                    <div class="w-full h-40 bg-gray-200 rounded-lg overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300.png?text=Keycap+Goods+Landing+Page" class="w-full h-full object-cover">
+                    </div>
+                </a>
+
+                <!-- Web Item 2 -->
+                <a href="#" target="_blank" class="card-hover group block bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-gray-900">🎁 삼성화재 선물하기 서비스 제안</h3>
+                        <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </div>
+                    <p class="text-gray-600 mb-6">SWOT 분석과 타겟 키워드 도출을 바탕으로 기획된 보험 선물하기 캠페인 사이트입니다. 2030 세대에 맞춘 UI를 적용했습니다.</p>
+                    <div class="w-full h-40 bg-gray-200 rounded-lg overflow-hidden relative">
+                         <img src="https://via.placeholder.com/600x300.png?text=Insurance+Gift+Campaign" class="w-full h-full object-cover">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tighter mb-2">PORTFOLIO.</h2>
+                <p class="text-gray-400 text-sm">기획부터 프론트엔드까지, 아이디어를 현실로 만듭니다.</p>
+            </div>
+            <div class="mt-6 md:mt-0 flex flex-col md:items-end text-sm text-gray-400">
+                <p class="mb-1">📧 your@email.com</p>
+                <p>🐱 github.com/yourusername</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            &copy; 2026 Portfolio. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
