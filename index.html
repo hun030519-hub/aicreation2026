@@ -24,6 +24,7 @@
             <a href="#" class="text-xl font-bold tracking-tighter">PORTFOLIO.</a>
             <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
                 <a href="#video" class="hover:text-blue-600 transition">Shorts</a>
+                <a href="#infographic" class="hover:text-blue-600 transition">Posters</a>
                 <a href="#landing" class="hover:text-blue-600 transition">Web</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
@@ -88,7 +89,40 @@
         </div>
     </section>
 
-    <section id="landing" class="py-20 bg-gray-50">
+    <section id="infographic" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2">🎨 Infographics & Posters</h2>
+            <p class="text-gray-500 mb-10">제품의 매력을 돋보이게 하는 시각 디자인 및 인포그래픽 포스터입니다.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer">
+                    <div class="h-80 md:h-96 bg-gray-100 relative overflow-hidden">
+                        <img src="./poster1.png" 
+                             alt="Custom Keyboard Styling" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-1 group-hover:text-blue-600 transition">감성 커스텀 키보드 연출</h3>
+                        <p class="text-sm text-gray-500">파스텔 톤의 소품과 커스텀 키캡을 조화롭게 배치한 감성적인 제품 연출 디자인</p>
+                    </div>
+                </div>
+
+                <div class="card-hover group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm cursor-pointer">
+                    <div class="h-80 md:h-96 bg-gray-100 relative overflow-hidden">
+                        <img src="./poster2.png" 
+                             alt="Keycap Keyring Infographic" 
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-1 group-hover:text-blue-600 transition">키캡 키링 홍보 인포그래픽</h3>
+                        <p class="text-sm text-gray-500">제품의 4가지 핵심 셀링 포인트를 소비자에게 직관적으로 전달하는 카드뉴스 형태의 디자인</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="landing" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl font-bold mb-2">💻 Web & Landing Pages</h2>
             <p class="text-gray-500 mb-10">굿즈 기획 및 캠페인 홍보를 위해 직접 구축한 렌딩 페이지입니다.</p>
@@ -118,23 +152,41 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-white py-12">
-        <div class="max-w-4xl mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
-            <div>
-                <h2 class="text-2xl font-bold tracking-tighter mb-2">PORTFOLIO.</h2>
-                <p class="text-gray-400 text-sm">기획부터 프론트엔드까지, 아이디어를 현실로 만듭니다.</p>
+    <footer id="contact" class="bg-gray-900 text-white relative mt-10">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Work Together!</h2>
+                <p class="text-gray-400 text-lg">기획부터 디자인, 개발까지 새로운 아이디어를 현실로 만들 준비가 되셨나요?<br class="hidden md:block" /> 언제든 편하게 연락해 주세요.</p>
             </div>
-            <div class="mt-6 md:mt-0 flex flex-col md:items-end text-sm text-gray-400">
-                <a href="mailto:hun030519@gmail.com" class="mb-2 hover:text-white transition block">
-                    📧 hun030519@gmail.com
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-16">
+                <a href="mailto:hun030519@gmail.com" class="w-full md:w-auto flex items-center justify-center gap-4 px-8 py-5 bg-white/5 hover:bg-blue-600 border border-gray-700 hover:border-blue-500 rounded-2xl transition-all duration-300 group shadow-lg">
+                    <span class="text-3xl">📧</span>
+                    <div class="text-left">
+                        <span class="block text-xs text-gray-400 group-hover:text-blue-100 mb-1">Email Me</span>
+                        <span class="block text-xl font-semibold tracking-wide">hun030519@gmail.com</span>
+                    </div>
                 </a>
-                <a href="https://github.com/hun030519-hub" target="_blank" class="hover:text-white transition block">
-                    🐱 github.com/hun030519-hub
+                
+                <a href="https://github.com/hun030519-hub" target="_blank" class="w-full md:w-auto flex items-center justify-center gap-4 px-8 py-5 bg-white/5 hover:bg-purple-600 border border-gray-700 hover:border-purple-500 rounded-2xl transition-all duration-300 group shadow-lg">
+                    <span class="text-3xl">🐱</span>
+                    <div class="text-left">
+                        <span class="block text-xs text-gray-400 group-hover:text-purple-100 mb-1">GitHub Profile</span>
+                        <span class="block text-xl font-semibold tracking-wide">hun030519-hub</span>
+                    </div>
                 </a>
             </div>
-        </div>
-        <div class="max-w-4xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-            &copy; 2026 Portfolio. All rights reserved.
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold tracking-tighter">PORTFOLIO.</h3>
+                </div>
+                <div class="text-gray-500 text-sm">
+                    &copy; 2026 Portfolio. All rights reserved.
+                </div>
+            </div>
         </div>
     </footer>
 
